@@ -65,14 +65,14 @@ const getEvenOddNumberInArr = (
 
 const handleEachRow = (input: number[]): void => {
   console.log("Min max sum:\t", minMaxSum(input, 4));
-  console.log("Count total of array:\t", calculateSumOfRange(input));
-  console.log("Find min in array:\t", Math.min(...input));
-  console.log("Find max in array:\t", Math.max(...input));
+  console.log("Sum:\t", calculateSumOfRange(input));
+  console.log("Min:\t", Math.min(...input));
+  console.log("Max:\t", Math.max(...input));
 
   const { even, odd } = getEvenOddNumberInArr(input);
 
-  console.log("Find even elements in array:\t", even);
-  console.log("Find odd elements in array:\t", odd);
+  console.log("Even:\t", even);
+  console.log("Odd:\t", odd);
 };
 
 const handleListInput = (multiInput: number[][]): void => {
